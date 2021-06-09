@@ -1,3 +1,42 @@
-body{
-    background-color: red;
+@font-face {
+    font-family: "Roboto";
+    src: url('Roboto-Bold.ttf'); 
+  }
+
+
+
+ 
+
+
+  .header__town
+  {
+      background-color: gray;
+  }  
+  .header-quote-thin
+  {
+      font-family:'Roboto-Thin' ;
+  }
+  .header-quote-bold
+  {
+    font-family: 'Roboto';
+  }
+.header__button
+{
+   
+    background-color: #9356DC;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    
 }
+  .restaurant-image__picture
+  {
+    max-width: 50px;
+	max-height: 50px;    
+  }
+  footer
+  {
+      background-color: #353535;
+      color: white;
+  }
+
