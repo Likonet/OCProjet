@@ -1,13 +1,17 @@
 @font-face {
-    font-family: "Roboto";
-    src: url('Roboto-Regular.ttf'); 
-    font-family: "Roboto-Thin";
-    src: url('Roboto-Thin.ttf');
-    font-family:"Titre";
-    src: url('Roboto-Bold.ttf');
-    font-family:"Shrikhand";
-    src: url('Shrikhand-Regular.ttf')
+  
+    font-family:'Shrikhand';
+    src: url('Shrikhand-Regular.ttf');
 
+  }
+
+  @font-face{
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf'); 
+    font-family: 'Roboto-Thin';
+    src: url('Roboto-Thin.ttf');
+    font-family:'Titre';
+    src: url('Roboto-Bold.ttf');
   }
 body
 {
@@ -59,12 +63,12 @@ margin: 0;
   }
   .restaurant-location__byline
   {
-      font-family: 'Roboto-Light.ttf';
+      
       margin-top: 5px;
   }
   .process__title,   .header-quote-bold, .restaurant-name__heading, .restaurant_title
   {
-      font-family: 'Titre';
+     font-family: 'Titre';
   }
   .header__lowblock
   {
@@ -79,7 +83,7 @@ background-color: #f6f6f6;
     font-size: 28px;
     text-align: center;
     margin-left: 15%;
-    width: 70%;
+    width: 75%;
     margin-right: 15%;
     padding-top: 44px;
   }
@@ -167,7 +171,20 @@ button
     margin-right: 5%;
     height: 84px;
 }
-
+.Label-new
+{
+   
+    top: 40px;
+    left: 202px;
+    background-color: #99E2D0;
+    border-color: none;
+    padding: 2%;
+    color: #259c80;
+    width: 15%;
+    font-family: 'Titre';
+    border-radius: 5px;
+    font-size: x-large;
+}
 .restaurant_sticker
 {
    
@@ -238,4 +255,19 @@ button
   .footer__link, .footer__link--active
   {
     margin-bottom: 8px;
+  }
+  .footer__title, .footer__link, .footer__link--active
+
+  {
+      margin-left: 5%;
+  }
+ .fa-hands-helping
+  {
+margin-right: 8px;
+font-size: 12px;
+  }
+  .fa-utensils
+  {
+      margin-right: 11px;
+      font-size: 15px;
   }

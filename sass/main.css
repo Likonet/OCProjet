@@ -1,18 +1,25 @@
 @font-face {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   src: url("Shrikhand-Regular.ttf");
 }
+
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   src: url("Roboto-Regular.ttf");
-  font-family: "Roboto-Thin";
+  font-family: 'Roboto-Thin';
   src: url("Roboto-Thin.ttf");
-  font-family: "Titre";
+  font-family: 'Titre';
   src: url("Roboto-Bold.ttf");
 }
+
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
 }
 
@@ -29,13 +36,17 @@ body {
   height: 60px;
   text-align: center;
   font-size: larger;
-  font-family: "Titre";
+  font-family: 'Titre';
 }
 
 .header__town-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-left: 19%;
   margin-right: 25%;
 }
@@ -61,7 +72,7 @@ body {
 }
 
 .process__title, .header-quote-bold, .restaurant-name__heading, .restaurant_title {
-  font-family: "Titre";
+  font-family: 'Titre';
 }
 
 .header__lowblock {
@@ -82,6 +93,7 @@ body {
 }
 
 .header__button {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 25px;
   color: white;
@@ -97,9 +109,16 @@ body {
 }
 
 .process {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 350px;
 }
 
@@ -111,6 +130,8 @@ body {
 }
 
 .process__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: solid #f6f6f6;
   background-color: #f6f6f6;
@@ -121,6 +142,8 @@ body {
 }
 
 .process__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 60px;
 }
@@ -131,22 +154,30 @@ body {
 
 .order__process {
   font-size: larger;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-left: 34px;
 }
 
 .number {
   background-color: #9356dc;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border-radius: 20px;
   padding: 5px 10px 5px 10px;
   color: white;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-left: -14px;
 }
 
 .fa-mobile-alt, .fa-list-ul, .fa-store {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: larger;
   margin-left: 20px;
 }
@@ -169,7 +200,7 @@ button {
   padding: 2%;
   color: #259c80;
   width: 15%;
-  font-family: "Titre";
+  font-family: 'Titre';
   border-radius: 5px;
   font-size: x-large;
 }
@@ -178,8 +209,13 @@ button {
   border-radius: 20px;
   background-color: white;
   height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 90%;
   margin: 5% 5%;
 }
@@ -193,8 +229,13 @@ button {
 .restaurant {
   background-color: #f6f6f6;
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .restaurant_title {
@@ -208,8 +249,12 @@ button {
 }
 
 .legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 63px;
   margin-right: 8%;
   margin-left: 5%;
@@ -249,5 +294,4 @@ footer {
   margin-right: 11px;
   font-size: 15px;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
