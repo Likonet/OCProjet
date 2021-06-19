@@ -1,3 +1,4 @@
+@media screen and (max-width: 600px){
 @font-face {
   font-family: "Shrikhand";
   src: url("Shrikhand-Regular.ttf");
@@ -14,12 +15,18 @@
 
 
 
+
 .arrow__back
 {
   background-color: white;
   border: none;
   margin-right: 16%;
   font-size: 23px;
+}
+body
+
+{
+  margin: 0;
 }
 .bloc
 
@@ -58,6 +65,7 @@
 .header__picture
 {
   width: 100%;
+  position: absolute;
 }
 
 .starter__bloc, .desert__bloc, .main__bloc
@@ -97,13 +105,15 @@ margin-left: 7%;
 footer {
   background-color: #353535;
   color: white;
+  position: relative;
+    top: 216px;
 
 }
 
 .footer__title {
   font-family: Shrikhand;
-  margin-top: 22px;
-  margin-bottom: 15px;
+
+  padding: 16px 0px;
 }
 
 .footer__link, .footer__link--active {
@@ -117,8 +127,10 @@ section
 {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
- 
+  position: relative;
+    top: 200px;
 }
+
 .validation__button
 {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -145,4 +157,226 @@ section
   margin-right: 11px;
   font-size: 15px;
 }
-/*# sourceMappingURL=style.css.map */
+}
+
+
+
+
+.menu
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.ttf");
+  font-family: "Roboto-Thin";
+  src: url("Roboto-Thin.ttf");
+  font-family: "Titre";
+  src: url("Roboto-Bold.ttf");
+}
+
+
+
+
+
+.arrow__back
+{
+  background-color: white;
+  border: none;
+  margin-right: 16%;
+  font-size: 23px;
+}
+body
+
+{
+  margin: 0;
+}
+.bloc
+
+{
+  display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+.logo_heart
+{
+  margin-right: 9%;
+  font-size: 25px;
+}
+.title
+{
+  font-family: 'Shrikhand';
+  margin-top: 33px;
+  font-size: 27px;
+  margin-left: 7%;
+}
+.header__menu
+{
+  
+
+}
+
+.menu
+{
+    display: block;
+  
+
+}
+.header__title
+{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  margin-left: -15%;
+  
+}
+.header__picture
+{
+  width: 100%;
+  position: absolute;
+}
+
+.starter__bloc, .desert__bloc, .main__bloc
+{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  border-radius: 15px;
+  height: 60px;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+.starter__name
+{
+  font-family: 'Titre';
+  margin-left: 5%;
+}
+.starter__title
+{
+border-bottom: solid #99E2D0;
+width: 42px;
+padding-bottom: 3px;
+margin-top: 30px;
+margin-left: 7%;
+}
+.starter_low
+{
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 5% 0% 5%;
+  font-size: 12px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  position: relative;
+    top: 216px;
+
+}
+
+.footer__title {
+  font-family: Shrikhand;
+
+  padding: 16px 0px;
+}
+
+.footer__link, .footer__link--active {
+  margin-bottom: 8px;
+}
+
+.footer__title, .footer__link, .footer__link--active {
+  margin-left: 5%;
+}
+section
+{
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+    top: 200px;
+}
+
+.validation__button
+{
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 25px;
+  color: white;
+  padding: 14px;
+  border: white;
+  width: 50%;
+ 
+  margin-left: 22%;
+  margin-right: 22%;
+  font-size: large;
+  text-align: center;
+  
+  margin-top: 45px;
+  margin-bottom: 65px;
+}
+.fa-hands-helping {
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+.fa-utensils {
+  margin-right: 11px;
+  font-size: 15px;
+}
+
+
+@media all and (min-width: 600px) and (max-width:1024px) 
+{
+  .menu
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+.starter, .main, .desert
+
+{
+  width: 40%;
+}
+.starter__bloc
+{
+  display: flex;
+flex-direction: column;
+background-color: white;
+width: 90%;
+border-radius: 15px;
+height: 83px;
+margin-left: 5%;
+margin-right: 5%;
+justify-content: space-evenly;
+margin-top: 15px;
+}
+
+.validation__button {
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  border-radius: 25px;
+  color: white;
+  padding: 14px;
+  border: white;
+  width: 33%;
+  margin-left: 33%;
+  margin-right: 33%;
+  font-size: large;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 65px;
+}
+
+}
