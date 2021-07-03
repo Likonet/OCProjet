@@ -250,47 +250,4 @@ footer {
   font-size: 15px;
 }
 
- 
-.like
-{
-
-}
-.like:hover
-{
-
-}
-
-.far
-{
-position: relative;
-left: 104px;
-}
-
-.fa-heart
-{
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 1px black;
-  background-color: transparent;
-  opacity: 25%;
-  transition: opacity 4s;
-  color: transparent;
-  background: transparent;
-}
-
-.fa-heart:hover {
- 
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    background-clip: border-box;
-color: transparent;
--webkit-background-clip: text;
-opacity: 1;
- 
-
-  }
-
-  a
-  {
-    color: black;
-    text-decoration: none;
-  }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style3.css.map */
