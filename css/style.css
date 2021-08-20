@@ -1,114 +1,70 @@
-.visu {
-  animation: vu 14s;
+@keyframes spin {
+  50% {
+    visibility: hidden;
+  }
+}
+.ool {
+  animation: vu 6s;
 }
 
 @keyframes vu {
   0% {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+    visibility: hidden;
   }
-  90% {
+  50% {
     display: block;
   }
 }
-@keyframes vu2 {
-  0% {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-  70% {
-    display: none;
-  }
-}
-.loader {
-  color: #9356dc;
-  font-size: 90px;
-  text-indent: -9999em;
-  overflow: hidden;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  margin: 72px auto;
-  position: relative;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
-  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+.visu {
+  animation: vu 7s 1500ms;
 }
 
-@-webkit-keyframes load6 {
-  0% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-  5%, 95% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-  10%, 59% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
-  }
-  20% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
-  }
-  38% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+.fa-square {
+  color: #ff79da;
+}
+
+.load1 {
+  animation: loading 1300ms infinite;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 50%;
+}
+
+.load2 {
+  animation: loading 1300ms 600ms infinite;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.load3 {
+  animation: loading 1300ms 1200ms infinite;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+@keyframes loading {
+  50% {
+    transform: rotate(180deg);
   }
   100% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-}
-@keyframes load6 {
-  0% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-  5%, 95% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-  10%, 59% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
-  }
-  20% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
-  }
-  38% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
-  }
-  100% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-}
-@-webkit-keyframes round {
-  0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
-@keyframes round {
+@keyframes loading2 {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    transform: scale(1);
+  }
+  25% {
+    transform: scaleX(1, 5);
+  }
+  50% {
+    transform: scale(2);
+  }
+  75% {
+    transform: scale(1, 5);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }
 @font-face {
@@ -196,6 +152,8 @@ body {
 
 .restaurant-location__byline {
   margin-top: 5px;
+  font-size: 17px;
+  font-family: "Roboto-Thin";
 }
 
 .process__title,
@@ -240,6 +198,10 @@ body {
   text-align: center;
   height: auto;
   font-family: "Roboto";
+}
+
+.header__button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .process {
@@ -389,6 +351,7 @@ footer {
   background-color: #353535;
   color: white;
   height: 190px;
+  margin-top: -22px;
 }
 
 .footer__title {
@@ -449,10 +412,15 @@ a {
 @media all and (min-width: 1042px) and (max-width: 2048px) {
   .resto {
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 43px;
+    margin-bottom: 43px;
   }
 
   .restaurant_sticker {
-    height: 85%;
+    height: 92%;
+    width: 284px;
+    margin: 0;
   }
 
   .restaurant_title {

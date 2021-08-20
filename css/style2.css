@@ -182,7 +182,7 @@ body {
   display: flex;
   margin-top: 20px;
   margin-bottom: 10px;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-left: -15%;
   position: relative;
 }
@@ -258,7 +258,7 @@ body {
 .txt {
   display: flex;
   flex-direction: column;
-  width: 73%;
+  width: 82%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -357,9 +357,10 @@ body {
 }
 .starter__price {
   margin-top: 37px;
-  width: 30%;
+  width: 12%;
   text-align: center;
   font-family: "Titre";
+  margin-right: 11px;
 }
 
 .starter__name {
@@ -471,6 +472,10 @@ section {
   text-align: center;
   margin-top: 45px;
   margin-bottom: 65px;
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .fa-hands-helping {
