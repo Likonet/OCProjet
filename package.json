@@ -9,7 +9,9 @@
   "devDependencies": {},
   "scripts": {
     "sass2": "sass --watch ./sass/main2.scss:./css/style2.css" ,
+    "sass3": "sass --watch ./sass/main3.scss:./css/style3.css" ,
     "sass": "sass --watch ./sass/main.scss:./css/style.css" 
+   
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   @font-face {
     font-family: "Shrikhand";
     src: url("Shrikhand-Regular.ttf");
@@ -76,7 +76,6 @@
     background-color: #353535;
     color: white;
     position: relative;
-    top: 216px;
   }
 
   .footer__title {
@@ -150,6 +149,8 @@
   border: none;
   margin-right: 16%;
   font-size: 23px;
+  margin-left: 95%;
+  cursor: pointer;
 }
 
 body {
@@ -183,14 +184,14 @@ body {
   margin-top: 20px;
   margin-bottom: 10px;
   justify-content: space-evenly;
-  margin-left: -15%;
+  margin-left: -31%;
   position: relative;
 }
 
 .header__picture {
   width: 100%;
   position: absolute;
-  height: 600px;
+  height: 321px;
 }
 
 @keyframes menuu {
@@ -315,6 +316,7 @@ body {
   cursor: pointer;
   opacity: 0;
   overflow: hidden;
+  box-shadow: 0px 4px 16px #c8c8c8;
 }
 
 @keyframes menuu1 {
@@ -392,7 +394,6 @@ footer {
   background-color: #353535;
   color: white;
   position: relative;
-  top: 200px;
 }
 
 @keyframes anim-in {
@@ -456,7 +457,7 @@ section {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   position: relative;
-  top: 200px;
+  top: 39px;
 }
 
 .validation__button {
@@ -465,16 +466,18 @@ section {
   color: white;
   padding: 14px;
   border: white;
-  width: 50%;
-  margin-left: 22%;
-  margin-right: 22%;
+  width: 33%;
+  margin-left: 33%;
+  margin-right: 33%;
   font-size: large;
   text-align: center;
   margin-top: 45px;
   margin-bottom: 65px;
+  box-shadow: 0px 4px 16px #c8c8c8;
+  cursor: pointer;
 }
 
-.styled:active {
+.validation__button:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
@@ -488,79 +491,105 @@ section {
   font-size: 15px;
 }
 
-/* TABLETTE */
-@media all and (min-width: 1042px) and (max-width: 2048px) {
-  .menu {
-    display: flex;
-    justify-content: space-around;
+@media all and (min-width: 768px) and (max-width: 1025px) {
+  section {
+    background-image: #f6f6f6;
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    top: 275px;
   }
 
+  footer {
+    background-color: #353535;
+    color: white;
+    position: relative;
+    top: 249px;
+  }
+
+  .header__title {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    margin-left: -34%;
+    position: relative;
+  }
+}
+@media all and (min-width: 1042px) and (max-width: 2048px) {
   .starter,
 .main,
 .desert {
-    width: 40%;
-  }
-
-  .starter__bloc4,
-.starter__bloc,
-.starter__bloc1,
-.starter__bloc2,
-.starter__bloc3 {
     display: flex;
-    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .block__meal {
+    display: flex;
+    flex-direction: row;
     background-color: white;
-    width: 90%;
+    width: 27%;
     border-radius: 15px;
-    height: 83px;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content: space-evenly;
+    height: 164px;
+    justify-content: space-between;
     margin-top: 15px;
+    cursor: pointer;
+    opacity: 0;
+    overflow: hidden;
+    box-shadow: none;
+    margin-left: 4%;
+    margin-right: 0%;
   }
 
-  @keyframes anim-in {
-    0% {
-      width: 0px;
-    }
-    100% {
-      width: 20%;
-    }
-  }
-  @keyframes anim-out {
-    0% {
-      width: 20%;
-    }
-    100% {
-      width: 0%;
-    }
-  }
-  .starter__bloc4:hover .anim,
-.starter__bloc2:hover .anim,
-.starter__bloc3:hover .anim,
-.starter__bloc1:hover .anim {
-    animation: anim-in 1000ms forwards;
+  .starter__title {
+    margin-left: 3%;
+    font-family: "Shrikhand";
+    color: #99e2d0;
   }
 
-  .starter__bloc4 .anim,
-.starter__bloc2 .anim,
-.starter__bloc3 .anim,
-.starter__bloc1 .anim {
-    animation: anim-out 1000ms forwards;
+  .title {
+    margin-left: 3%;
+  }
+
+  .starter__name {
+    margin-top: 54px;
+  }
+
+  .starter__price {
+    margin-top: 66px;
+  }
+
+  .fa-check-circle {
+    margin-top: 61px;
+  }
+
+  section {
+    background-color: transparent;
+    border-radius: 40px 40px 0 0;
+    position: none;
+    top: 0px;
+  }
+
+  .header__picture {
+    height: 142%;
+  }
+
+  .header__title {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    margin-left: -40%;
+    position: relative;
   }
 
   .validation__button {
-    background: linear-gradient(to bottom right, #ff79da, #9356dc);
-    border-radius: 25px;
+    box-shadow: none;
+  }
+
+  footer {
+    background-color: transparent;
     color: white;
-    padding: 14px;
-    width: 50%;
-    margin-left: 22%;
-    margin-right: 22%;
-    font-size: large;
-    text-align: center;
-    margin-top: 45px;
-    margin-bottom: 65px;
-    border-color: snow;
+    position: relative;
   }
 }
 
