@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   @font-face {
     font-family: "Shrikhand";
     src: url("Shrikhand-Regular.ttf");
@@ -465,6 +465,7 @@ footer {
 .footer__link,
 .footer__link--active {
   margin-left: 5%;
+  cursor: pointer;
 }
 section {
   background-color: #f6f6f6;
@@ -512,7 +513,7 @@ margin-right: 33%;
     background-image: #f6f6f6;
     border-radius: 40px 40px 0 0;
     position: relative;
-    top: 275px;
+    top: 250px;
 }
 
 footer {

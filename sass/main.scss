@@ -1,79 +1,98 @@
 .vois
 {
 
-position: relative;
-z-index: -1;
-animation: hey 5s linear both;
+
+animation: hey 120s  ;
+
 }
+
 @keyframes hey
 {
   0% {
-    opacity: 0;
+
+   
+    overflow: hidden;
+    max-height: 0;
 }
-90% {
-    opacity: 0;
+
+5% {
+  overflow: hidden;
+    max-height: 0;
+    
 }
 100% {
-    opacity: 1;
-   
+  max-height: 9999999px;
   
+
 }
 }
 
 
-@keyframes spin
+@keyframes blind
 
 {
 
-50%{
-  visibility: hidden;
+
+  0%,90% {
+
+    max-height: 100vh;
+  height: 100vh;
+  opacity: 1;
 }
+
+100% {
+
+  max-height: 0vh;
+  height: 0vh;
+  opacity: O;
+
 }
+
+}
+
+
 
 .loader
 {
  
   
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: vu2 5s linear both;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+    animation: blind 5s ;
+  max-height: 0;
+  opacity: 0;
 
 }
-@keyframes vu2
 
+@keyframes test
 {
 
-  0% {
-    opacity: 1;
-}
-90% {
-    opacity: 0.9;
-}
-100% {
-    opacity: 0;
-   
-  
+  0%
+  {
+    display: none;
+  }
+  90%
+  {
+    display: block;
+  }
 }
 
-}
-@keyframes vu
-
+@keyframes test2
 {
-
-0%{
-  
-
-}
-50%{
-  display: hidden;
-}
-
-}
-.visu
-{
+  0%
+  {
+    display: block;
+  }
+  90%
+  {
+    display: none;
+  }
 
 }
+
+
 
 .fa-square
 {
@@ -84,16 +103,16 @@ animation: hey 5s linear both;
 
 .load1
 {
-  animation: loading  1300ms  infinite;
-  margin-left: 30%;
+animation: loading  1300ms  infinite;
+margin-left: 30%;
 margin-right: 30%;
 margin-top: 50%;
 }
 
 .load2
 {
-  animation: loading  1300ms 600ms infinite;
-  margin-left: 30%;
+animation: loading  1300ms 600ms infinite;
+margin-left: 30%;
 margin-right: 30%;
 
 }
@@ -126,29 +145,7 @@ transform: rotate(0deg);
 }
 }
 
-@keyframes loading2
-{
-  0%{
-    transform: scale(1);
-  }
 
-  25%{
-    transform: scaleX(1,5);
-  }
- 50%{
-   transform: scale(2);
- }
- 75%{
-  transform: scale(1,5);
-}
-
-100%{
-  transform: scale(1);
-}
-
-
-
-}
 
 
 
