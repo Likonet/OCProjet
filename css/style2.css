@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   @font-face {
     font-family: "Shrikhand";
     src: url("Shrikhand-Regular.ttf");
@@ -451,6 +451,7 @@ footer {
 .footer__link,
 .footer__link--active {
   margin-left: 5%;
+  cursor: pointer;
 }
 
 section {
@@ -475,6 +476,7 @@ section {
   margin-bottom: 65px;
   box-shadow: 0px 4px 16px #c8c8c8;
   cursor: pointer;
+  animation: menuu1 2000ms 0ms forwards;
 }
 
 .validation__button:active {
@@ -496,7 +498,8 @@ section {
     background-image: #f6f6f6;
     border-radius: 40px 40px 0 0;
     position: relative;
-    top: 275px;
+    top: 250px;
+    height: 1180px;
   }
 
   footer {
@@ -584,6 +587,19 @@ section {
 
   .validation__button {
     box-shadow: none;
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    border-radius: 25px;
+    color: white;
+    padding: 14px;
+    border: white;
+    width: 31%;
+    margin-left: 39%;
+    margin-right: 33%;
+    font-size: large;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 65px;
+    cursor: pointer;
   }
 
   footer {
