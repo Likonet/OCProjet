@@ -375,7 +375,7 @@ right: 13px;
 .restaurant-image__picture {
   width: 100%;
   border-radius: 17px 17px 0px 0px;
-  height: 70%;
+  height: 65%;
   object-fit: cover;
 }
 
@@ -387,8 +387,8 @@ right: 13px;
   flex-direction: column;
 }
 .restaurant_title {
-  margin-left: 5%;
-  font-size: 23px;
+  margin-left: 8%;
+  font-size: 25px;
   margin-top: 50px;
 }
 .restaurant-name__heading {
@@ -401,6 +401,7 @@ right: 13px;
   margin-right: 8%;
   margin-left: 5%;
   margin-top: 20px;
+  
 }
 
 .like {
@@ -544,10 +545,11 @@ a {
   .grp2
   {
     display: flex;
+    justify-content: space-evenly;
   }
 
   .restaurant_sticker {
-    height: 400px;
+    height:  308px;
   }
 
 }

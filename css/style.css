@@ -323,7 +323,7 @@ button {
 .restaurant-image__picture {
   width: 100%;
   border-radius: 17px 17px 0px 0px;
-  height: 70%;
+  height: 65%;
   object-fit: cover;
 }
 
@@ -335,8 +335,8 @@ button {
 }
 
 .restaurant_title {
-  margin-left: 5%;
-  font-size: 23px;
+  margin-left: 8%;
+  font-size: 25px;
   margin-top: 50px;
 }
 
@@ -485,10 +485,11 @@ a {
   .grp1,
 .grp2 {
     display: flex;
+    justify-content: space-evenly;
   }
 
   .restaurant_sticker {
-    height: 400px;
+    height: 308px;
   }
 }
 
